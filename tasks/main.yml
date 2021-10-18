@@ -1,0 +1,6 @@
+---
+- name: Download cv
+  get_url:
+    url: "{{ cv_url }}"
+    dest: "{{ cv_bin_path }}"
+    mode: '0777'
